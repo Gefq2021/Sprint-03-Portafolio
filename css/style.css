@@ -1,0 +1,490 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, 
+*:before, 
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.main__sobremi,
+.main__skills,
+.main__formacion,
+.main__proyectos,
+.main__contacto {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: block;
+    max-width: 1040px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #464646;
+}
+
+h3 {
+    margin-bottom: .5rem;
+    color: #464646;
+    font-weight: 100;
+}
+
+
+/* header */
+.header {
+    background-color: #001d38;
+    color: #fff;
+    padding: 0 1rem;
+    position: sticky;
+    top: 0;
+}
+
+.main__sobremi {
+    padding: 5.5rem 1rem;
+    background-color: #747482;
+    color: #fff;
+}
+
+.div__header {
+    margin: 0 auto;
+    padding: 0 .5rem;
+    font-size: 1.5rem;
+    min-height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nombre {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+}
+
+.icon-menu {
+    display: none;
+}
+
+.header__nav-links {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.header__nav-link {
+    padding: .5rem 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgb(207, 204, 204);
+    font-weight: bold;
+}
+
+.header__nav-link:hover {
+    background-color: rgb(129, 126, 126);
+    color: #fff;
+    border-radius: .22rem;
+}
+
+
+/* main */
+
+/* Sobre mi */
+.container__sobremi {
+    /* padding: 5.5rem 1rem; */
+    font-size: 1.2rem;
+    color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobrme__img img {
+    background-color: rgb(148, 148, 148);
+    border-radius: 50%;
+    border: 8px solid  #001d38;
+}
+
+
+/* Skills */
+
+.main__skills {
+    background-color: #64647a;
+    padding: 6rem 0;
+}
+
+.main__sobremi-titulo,
+.main__skills-titulo,
+.main__formacion-titulo,
+.main__proyectos-titulo {
+    height: 3rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+
+.main__skills-items,
+.main__formacion-cursos,
+.main__proyectos-items {
+    height: calc(100% - 3rem - 1.5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 .5em;
+    flex-shrink: 1;
+}
+
+
+.main__skills-logotipo {
+    background-color: #747482;
+    padding: .8rem;
+    width: 155px;
+    max-height: 220px;
+    margin: .5em;
+    border-radius: .5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__skills-logotipo > h3 {
+    margin-bottom: 0;
+}
+
+.isotipo {
+    max-height: 120px;
+    margin-bottom: .5rem;
+}
+
+/* Formación Academica */
+
+.main__formacion {
+    background-color: #747482;
+    padding: 6rem 0;
+}
+
+.formacion-curso {
+    background-color: #8f8f94;
+    padding: 1rem;
+    margin: .5em;
+    border-radius: .5em;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 90%;
+    min-width: 280px;
+}
+
+.curso {
+    max-height: 220px;
+    width: 100%;
+    margin-bottom: .5rem;
+    border-radius: .5rem;
+}
+
+
+/* Proyectos */
+
+.main__proyectos {
+    background-color: #64647a;;
+    padding: 6rem 0;
+}
+
+.main__proyectos-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.proyecto-item {
+    background-color: #8f8f94;
+    padding: 1rem;
+    margin: .5em;
+    border-radius: .5em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90%;
+}
+
+.proyecto-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.proyecto {
+    max-width: 50%;
+    min-height: 100%;
+    margin-bottom: .5rem;
+    border-radius: 1rem;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    margin-bottom: .3rem;
+    background-color: #2121c7;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    border-radius: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 1rem;
+}
+
+/* Contactos */
+
+.main__contacto {
+    height: 100%;
+    background-color: #747482;
+    padding-top: 2rem;
+}
+
+.formcontacto__contacto {
+    max-width: 656px;
+    margin: 3rem .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.formcontacto__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* margin: 1rem 0; */
+}
+
+label {
+    background-color: #cdcdcd;
+    font-size: .9rem;
+    color: #91919f;
+    font-weight: bold;
+    margin-top: 1rem;
+    padding: .5rem 0 0 .5rem;
+    border-radius: .4rem .4rem 0 0;
+}
+
+.formcontato__input {
+    height: 2rem;
+    background-color: #cdcdcd;
+    color: #64647a;
+    font-size: 1rem;
+    padding: .5rem;
+    border: none;
+    outline: none;
+    border-radius: 0 0 .4rem .4rem;
+}
+
+.formcontato__textarea {
+    background-color: #cdcdcd;
+    /* margin-bottom: 2rem; */
+    height: 9rem;
+    resize: none;
+    padding: .5rem;
+    border: none;
+    outline: none;
+    border-radius: 0 0 .4rem .4rem;
+    color: #64647a;
+    font-size: 1rem;
+}
+
+.formcontato__boton {
+    width: 9rem;
+    height: 2rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.error-activo {
+    display: none;
+}
+
+.formcontato__error {
+    color: red;
+    font-size: .8em;
+    margin-top: .2em;
+}
+
+.mensaje__enviado,
+.mensaje__incompleto {
+    color: green;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.mensaje__incompleto {
+    color: red;
+}
+
+
+/* Footer */
+
+.footer {
+    min-height: 6rem;
+    background-color: #001d38;
+    padding: 1rem 0;
+    font-size: 1rem;
+    color: #747482;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    height: 1rem;
+    margin-left: .5rem;
+}
+
+.footer__dev {
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer__dev p {
+    margin: 0 1rem;
+}
+
+.autor strong {
+    color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .div__header {
+        padding: 0;
+        justify-content: space-between;
+    }
+    
+    .icon-menu {
+        display: block;
+        height: 1.5rem;
+        width: 1.5rem;
+        cursor: pointer;
+    }
+    
+    .icon-menu-linea {
+        display: block;
+        width: 1.3rem;
+        height: .25rem;
+        background-color: rgb(207, 204, 204);
+        border-radius: .2rem;
+        margin: .2rem auto;
+    }
+
+    .nav-activo {
+        display: none;
+    }
+    
+    .header__nav {
+        width: 100vw;
+        position: absolute;
+        padding: 0;
+        top: 4rem;
+        right: 0px;
+    }
+    
+    .header__nav-links {
+        height: 250px;
+        background-color: #001d38;
+        padding: 0;
+        border-top: .8px solid #91919f;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .header__nav-link {
+        width: 95vw;
+        display: block;
+        padding: .5rem 1rem;
+        text-decoration: none;
+        font-size: 1rem;
+        color: rgb(207, 204, 204);
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .container__sobremi {
+        flex-direction: column;
+    }
+
+    .sobrme__img {
+        margin: .5em 0;
+        text-align: center;
+        order: -1;
+    }
+
+    .sobrme__img img {
+        width: 75%;
+    }
+
+    .proyecto-item {
+        flex-direction: initial;
+    }
+
+    .proyecto-item {
+        width: 95vw;
+        min-height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    .proyecto-item:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .proyecto {
+        min-width: 100%;
+        height: 80%;
+    }
+    
+    .footer {
+        font-size: .8rem;
+    }
+    
+    .autor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .formcontacto__contacto {
+        margin: 2rem .5rem;
+    }
+    .formcontato__textarea {
+        height: 10rem;
+    }
+    
+}
