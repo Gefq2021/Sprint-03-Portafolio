@@ -5,7 +5,7 @@
     $asunto = $_POST["asunto"];
     $mensaje = $_POST["mensaje"];
 
-    $header = "Enviado desde el Protafolio de Gerardo Fabian Quispe";
+    // $header = "Enviado desde el Protafolio de Gerardo Fabian Quispe";
     $mensajeCompleto = "Nombre: " . $nombre . "\nCorreo: " . $email . "\nAsunto: " . $asunto . "\nMensaje: " . $mensaje;
     mail($destinatario, $asunto, $mensajeCompleto, $header);
 
