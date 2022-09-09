@@ -69,7 +69,7 @@ formulario.addEventListener("submit", (e) => {
 
     if(campos.nombre && campos.email && campos.asunto && campos.mensaje) {
         // formulario.reset();
-        console.log("Se envio el mensaje");
+
         document.querySelector(".mensaje__enviado").classList.remove("error-activo");
         setTimeout(() => {
             document.querySelector(".mensaje__enviado").classList.add("error-activo");
